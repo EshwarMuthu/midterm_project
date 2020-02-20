@@ -1,0 +1,20 @@
+html
+    body
+        h1 view course
+        h2 alloted courses
+        table(border=1)
+            tr
+                th course code
+                th course name
+                th begin time
+                th end time
+                th days
+                th faculty
+            each course in alloted_list
+                tr
+                    td= course.ccode
+                    td= course.cname
+                    td= course.ctime_begin
+                    td= course.ctime_end
+                    td= course.days
+                    td= course.handlingfac

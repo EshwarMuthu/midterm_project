@@ -1,0 +1,32 @@
+html
+    body
+        h1 edit
+        p you can swap your selected courses or delete them
+        table(border=1)
+            tr
+                th course code
+                th course name
+                th begin time
+                th end time
+                th days
+                th faculty
+                th swap
+                th delete
+            each course in alloted_list
+                tr
+                    td= course.ccode
+                    td= course.cname
+                    td= course.ctime_begin
+                    td= course.ctime_end
+                    td= course.days
+                    td= course.handlingfac
+                    td
+                        //- button(onclick=sendData(course.ccode,course.ctime_begin,course.ctime_end)) swap
+                        form(action="/stud/swap", method="get")
+                            button(type="submit" name="coursecode", value=course.ccode) Swap
+                    td
+                        form(action="/stud/delete", method="get")
+                            button(type="submit" name="coursecode", value=course.ccode) Delete
+
+        a(href="/stud/dashboard")
+            button go back

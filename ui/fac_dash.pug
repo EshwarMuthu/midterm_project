@@ -1,0 +1,26 @@
+html
+    body
+        h1 dash fac
+        p #{message}
+        form(action="/fac/dashboard", method="post")
+            input(type="text", name="ccode", placeholder="code")
+            input(type="text", name="cname", placeholder="name")
+            input(type="time", name="ctime_begin")
+            input(type="time", name="ctime_end")
+            input(type="text", name="days")
+            button(type="submit") Add course
+        h2 alloted courses
+        table(border=1)
+            tr
+                th course code
+                th course name
+                th begin time
+                th end time
+                th days
+            each course in allotedlist
+                tr
+                    td= course.ccode
+                    td= course.cname
+                    td= course.ctime_begin
+                    td= course.ctime_end
+                    td= course.days

@@ -1,0 +1,28 @@
+{
+    "courselist": [
+        {
+            "ccode": "vit1001",
+            "cname": "artificial intelligence",
+            "ctime_begin": "08:00",
+            "ctime_end": "09:00",
+            "days": "monday",
+            "handlingfac": "Sathya",
+            "enrolledstudents": [
+                "someone"
+            ],
+            "maxstudentsno": 60
+        },
+        {
+            "ccode": "vit1012",
+            "cname": "security systems",
+            "ctime_begin": "09:00",
+            "ctime_end": "10:00",
+            "days": "monday, tuesday",
+            "handlingfac": "Sathya",
+            "enrolledstudents": [
+                "someone"
+            ],
+            "maxstudentsno": 60
+        }
+    ]
+}

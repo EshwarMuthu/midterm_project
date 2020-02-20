@@ -1,0 +1,27 @@
+{
+    "studentslist": [
+        {
+            "name": "someone",
+            "subs_courses": [
+                "vit1001",
+                "vit1012"
+            ]
+        },
+        {
+            "name": "ram",
+            "subs_courses": []
+        },
+        {
+            "name": "arun",
+            "subs_courses": []
+        },
+        {
+            "name": "bala",
+            "subs_courses": []
+        },
+        {
+            "name": "kamal",
+            "subs_courses": []
+        }
+    ]
+}

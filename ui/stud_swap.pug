@@ -1,0 +1,24 @@
+html
+    body
+        h1 swap
+        p select a course to swap 
+        table(border=1)
+            tr
+                th course code
+                th course name
+                th begin time
+                th end time
+                th days
+                th faculty
+                th swap
+            each course in available_list
+                tr
+                    td= course.ccode
+                    td= course.cname
+                    td= course.ctime_begin
+                    td= course.ctime_end
+                    td= course.days
+                    td= course.handlingfac
+                    td
+                        form(action="/stud/swapped", method="post")
+                            button(type="submit" name="coursecode", value=course.ccode) select this course

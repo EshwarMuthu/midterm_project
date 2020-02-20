@@ -1,0 +1,24 @@
+{
+    "facultylist": [
+        {
+            "name": "someone",
+            "pwd": "prakash"
+        },
+        {
+            "name": "sathya",
+            "pwd": "narayan"
+        },
+        {
+            "name": "prem",
+            "pwd": "singh"
+        },
+        {
+            "name": "ravi",
+            "pwd": "kumar"
+        },
+        {
+            "name": "sri",
+            "pwd": "kanth"
+        }
+    ]
+}
